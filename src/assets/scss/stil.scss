@@ -14,6 +14,15 @@ sup {
 	font-size: 12px;
 }
 
+.notFound {
+	> * {
+		text-align: center;
+		font-size: 52px;
+		font-weight: bold;
+		margin: 4em;
+	}
+}
+
 .wrap {
 	width: 80%;
 	padding: 1em;
@@ -97,45 +106,48 @@ nav {
 		background-color: rgb(131, 139, 149);
 		border-radius: 5px;
 		margin: 0.5em 0;
-		>span {
-			line-height: 3em;
-			color: rgb(255, 255, 255);
-			background-color: rgb(155, 162, 170);
-			float: left;
-			border-radius: 5px;
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
-			margin-right: 0.5em;
-			padding: 0 0.5em;
-		}
-		>span:first-child {
-			margin-left: 0.5em;
-		}
-		>input {
-			min-width: 400px;
-			line-height: 3em;
-			margin: 0.5em;
-			float: left;
-			background-color: rgb(131, 139, 149);
-			border: none;
-			&::placeholder {
+		form {
+			>span {
+				line-height: 3em;
 				color: rgb(255, 255, 255);
-				font-size: 1.2em;
+				background-color: rgb(155, 162, 170);
+				float: left;
+				border-radius: 5px;
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+				margin-right: 0.5em;
+				padding: 0 0.5em;
+			}
+			>span:first-child {
+				margin-left: 0.5em;
+			}
+			>input {
+				min-width: 400px;
+				line-height: 3em;
+				margin: 0.5em;
+				float: left;
+				background-color: rgb(131, 139, 149);
+				border: none;
+				font-size: inherit;
+				&::placeholder {
+					color: rgb(255, 255, 255);
+					font-size: 1.2em;
+				}
+			}
+			.removecity:hover {
+				color: rgb(111, 7, 7);
 			}
 		}
-		.removecity:hover {
-			color: rgb(111, 7, 7);
-		}
-	}
-	.forecastholder {
-		overflow: hidden;
-		background-color: rgb(131, 139, 149);
-		border-radius: 5px;
-		margin: 0.5em;
-		padding: 1em 3em;
-		>span {
-			color: rgb(255, 255, 255);
-			font-size: 1.75em;
+		.forecastholder {
+			overflow: hidden;
+			background-color: rgb(131, 139, 149);
+			border-radius: 5px;
+			margin: 0.5em;
+			padding: 1em 3em;
+			>span {
+				color: rgb(255, 255, 255);
+				font-size: 1.75em;
+			}
 		}
 	}
 }
